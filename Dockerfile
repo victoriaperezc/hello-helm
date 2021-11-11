@@ -31,8 +31,8 @@ RUN chmod -R u+x /app && \
     chgrp -R 0 /app && \
     chmod -R g=u /app /etc/passwd
 
-ENV PORT 8080
-EXPOSE 8080
+ENV PORT 80
+EXPOSE 80
 
 # Vulnerability Advisor : Fix PASS_MAX_DAYS, PASS_MIN_DAYS and PASS_MIN_LEN, common-password
 # RUN mv -f /etc/login.defs /etc/login.defs.orig
